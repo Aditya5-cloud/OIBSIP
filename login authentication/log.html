@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+
+        <div id="loginPage">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+
+            <div class="spinner" id="spinner"></div>
+
+            <p id="loginMessage"></p>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register here</a></p>
+        </div>
+
+        <div id="registerPage" style="display:none;">
+            <h2>Register</h2>
+            <input type="text" id="regUsername" placeholder="Username" required>
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <button onclick="register()">Register</button>
+            <p id="registerMessage"></p>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+        </div>
+
+        <div id="securedPage" style="display:none;">
+            <h2>Welcome to the Secured Page!</h2>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+
+    <script src="log.js"></script>
+</body>
+</html>
