@@ -42,8 +42,8 @@ Each folder contains its respective project files along with necessary assets.
 ---
 
 🛠️ Tech Stack Used
-  ~HTML5
-  ~CSS3
+  ~HTML
+  ~CSS
   ~JavaScript
 
 
